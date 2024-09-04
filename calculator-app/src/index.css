@@ -1,0 +1,169 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.container {
+  background-color: black;
+  min-height: 60vh;
+  /* width: 30vw; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 30vw;
+}
+
+.screen {
+  background-color: #747bff;
+  color: white;
+  font-size: 4rem;
+  padding: 20px;
+  text-align: right;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  max-width: 100%; /* Ensure the screen doesn't exceed its container's width */
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 25px;
+  font-size: 2.5rem;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s;
+  flex: 1 1 22%; /* Adjusts the size of buttons */
+}
+
+button:hover {
+  background-color: #646cff;
+}
+
+button:active {
+  background-color: #535bf2;
+}
+
+button:nth-child(4n) {
+  background-color: #413f3f;
+}
+button:nth-child(4n):hover {
+  background-color: #0d4a98;
+}
+button:nth-child(4n):active {
+  background-color: #03142a;
+}
+button:nth-child(18n) {
+  background-color: #413f3f;
+}
+button:nth-child(18n):hover {
+  background-color: #0d4a98;
+}
+button:nth-child(18n):active {
+  background-color: #03142a;
+}
+.bottom-row {
+  flex: 1 1 45%;
+}
+
+.container .red-button {
+  background-color: red;
+  color: white; /* Adjust text color for better contrast */
+}
+
+.container .red-button:hover {
+  background-color: darkred;
+}
+
+.container .red-button:active {
+  background-color: crimson;
+}
+
+.container .green-button {
+  background-color: green;
+  color: white; /* Adjust text color for better contrast */
+}
+
+.container .green-button:hover {
+  background-color: darkgreen;
+}
+
+.container .green-button:active {
+  background-color: greenyellow;
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 35%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  overflow: hidden; /* Ensure the text doesn't overflow the container */
+}
+
+.moving-line {
+  display: inline-block;
+  animation: move 10s linear infinite; /* Slower speed for smooth wrap */
+  white-space: nowrap;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100%); /* Start off-screen from the left */
+  }
+  50% {
+    transform: translateX(0); /* Text fully visible, centered */
+  }
+  100% {
+    transform: translateX(100%); /* Wrap to the right side */
+  }
+}
