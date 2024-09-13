@@ -7,4 +7,7 @@ This Repo contains all my web - apps developed during web development course usi
   - calculator
   - Temperature converter (F - C & C - F)
  - Calculator
- - Counter using components 
+ - Counter using components
+ - Routing app
+ - Landing page design & implementation
+
