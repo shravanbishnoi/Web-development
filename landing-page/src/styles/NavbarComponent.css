@@ -1,0 +1,16 @@
+.custom-navbar {
+    background-color: black !important; /* Navbar background color */
+  }
+  
+  .custom-navbar .nav-link {
+    background-color: white !important; /* Button background color */
+    color: black !important; /* Button text color */
+    border-radius: 4px; /* Optional: to make the buttons look nicer */
+    padding: 5px 10px; /* Optional: adjust padding for better appearance */
+    margin-left: 10px; /* Optional: spacing between buttons */
+  }
+  
+  .custom-navbar .navbar-brand {
+    color: white !important; /* Navbar brand text color */
+  }
+  
