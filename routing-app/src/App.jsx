@@ -3,24 +3,21 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
+import Navbar from './components/NavBarComponent';
+import Footer from './components/Footer';
+import './App.css';
 
 const App = () => {
   return (
     <Router>
       <div>
-        <nav>
-          <div style={{ display: 'flex', gap: '20px' }}>
-            <Link to="/">Home</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/about">About</Link>
-          </div>
-        </nav>
-
+        <Navbar siteName="Routingmaster"/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

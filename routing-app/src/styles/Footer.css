@@ -1,0 +1,25 @@
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-content p:first-child {
+    font-weight: bold;
+  }
+  
+  .footer-content p:last-child {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
