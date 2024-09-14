@@ -11,6 +11,9 @@ function NavbarComponent({text}) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
           <Nav>
+          <Button className="rounded-pill bg-white">
+                <Nav.Link href="#contact" className='text-black'>Resume</Nav.Link>
+            </Button>
             <Button className="rounded-pill bg-white">
                 <Nav.Link href="#contact" className='text-black'>Projects</Nav.Link>
             </Button>
