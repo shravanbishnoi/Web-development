@@ -1,62 +1,66 @@
-import React from 'react';
+import React from 'react'
+import { Card } from 'react-bootstrap';
 import '../styles/ProjectGrid.css';
-import img1 from '../assets/p7.jpeg';
-import img2 from '../assets/p8.jpeg';
-import img3 from '../assets/p3.avif';
-import img4 from '../assets/p4.avif';
 
-
-const projects = [
-  {
-    id: 1,
-    title: 'First app',
-    description: 'This is the description for project one.',
-    image: img1,
-    link: '#',
-  },
-  {
-    id: 2,
-    title: 'Calculator',
-    description: 'This is the description for project two.',
-    image: img2,
-    link: '#',
-  },
-  {
-    id: 3,
-    title: 'Game',
-    description: 'This is the description for project three.',
-    image: img3,
-    link: '#',
-  },
-  {
-    id: 4,
-    title: 'Project Four',
-    description: 'This is the description for project four.',
-    image: img4,
-    link: '#',
-  },
-];
-
-const ProjectGrid = () => {
-  return (
-    <div className="project-grid">
-      {projects.map((project, index) => (
-        <div
-          key={project.id}
-          className={`project-item ${index % 2 === 0 ? 'image-left' : 'image-right'}`}
-        >
-          <div className="project-content">
-            <img src={project.image} alt={project.title} className="project-image" />
-            <div className="project-text">
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-              <a href={project.link} className="visit-button">Visit</a>
+function ProjectComponent() {
+    return (
+        <div className='project-component'>
+            <div className='project-header'>
+                <p>SELECTED</p>
+                <p>PROJECT</p>
             </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
+            <div className='project-body'>
+                <div className='project-card-first'>
+                    <Card style={{ width: '35rem', border: 'none', borderRadius: '0' }} className="mb-10">
+                        <Card.Img variant="top" src="src\assets\img2.png" />
+                        <Card.Body style={{ backgroundColor: 'black', color: 'white', textAlign: 'right' }}>
+                            <Card.Title>Creative Studio Website</Card.Title>
+                            <Card.Text> 
+                                Website Design
+                            </Card.Text>
 
-export default ProjectGrid;
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '35rem', border: 'none', borderRadius: '0' }} className="mb-5">
+                        <Card.Img variant="top" src="src\assets\img1.png" />
+                        <Card.Body style={{ backgroundColor: 'black', color: 'white', textAlign: 'right' }}>
+                            <Card.Title>Creative Studio Website</Card.Title>
+                            <Card.Text>
+                                Website Design
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+
+                </div>
+                <div className='project-card-second'>
+
+
+                    <Card style={{ width: '35rem', border: 'none', borderRadius: '0' }} className="mb-10">
+                        <Card.Img variant="top" src="src\assets\img1.png" />
+                        <Card.Body style={{ backgroundColor: 'black', color: 'white', textAlign: 'right' }}>
+                            <Card.Title>Creative Studio Website</Card.Title>
+                            <Card.Text>
+                                Website Design
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '35rem', border: 'none', borderRadius: '0' }} className="mb-5">
+                        <Card.Img variant="top" src="src\assets\img2.png" />
+                        <Card.Body style={{ backgroundColor: 'black', color: 'white', textAlign: 'right' }}>
+                            <Card.Title>Creative Studio Website</Card.Title>
+                            <Card.Text>
+                                Website Design
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+                
+            </div>
+        </div>
+    )
+}
+
+export default ProjectComponent
