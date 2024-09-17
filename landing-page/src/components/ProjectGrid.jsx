@@ -1,33 +1,38 @@
 import React from 'react';
 import '../styles/ProjectGrid.css';
+import img1 from '../assets/p7.jpeg';
+import img2 from '../assets/p8.jpeg';
+import img3 from '../assets/p3.avif';
+import img4 from '../assets/p4.avif';
+
 
 const projects = [
   {
     id: 1,
-    title: 'Project One',
+    title: 'First app',
     description: 'This is the description for project one.',
-    image: 'https://via.placeholder.com/300x200.png?text=Project+One',
+    image: img1,
     link: '#',
   },
   {
     id: 2,
-    title: 'Project Two',
+    title: 'Calculator',
     description: 'This is the description for project two.',
-    image: 'https://via.placeholder.com/300x200.png?text=Project+Two',
+    image: img2,
     link: '#',
   },
   {
     id: 3,
-    title: 'Project Three',
+    title: 'Game',
     description: 'This is the description for project three.',
-    image: 'https://via.placeholder.com/300x200.png?text=Project+Three',
+    image: img3,
     link: '#',
   },
   {
     id: 4,
     title: 'Project Four',
     description: 'This is the description for project four.',
-    image: 'https://via.placeholder.com/300x200.png?text=Project+Four',
+    image: img4,
     link: '#',
   },
 ];

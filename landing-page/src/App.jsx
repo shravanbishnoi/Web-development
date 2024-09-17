@@ -7,67 +7,39 @@ import Header from './components/Header';
 import ProfileSection from './components/ProfileSection';
 import ProjectGrid from './components/ProjectGrid';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
 import ScrollToTop from './components/ScrollToTop';
+import CarouselComponent from './components/SlidingComponent';
+import FAQs from './components/FAQs';
+import Contact from './components/contact';
 
 
 function App() {
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const skillsRef = useRef(null);
-  const contactRef = useRef(null);
-  const experienceRef = useRef(null);
-
-  const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
 
   return (
     <div className='App'>
-      <NavbarComponent text="Portfolio"
-        scrollToProjects={() => scrollToSection(projectsRef)} 
-        scrollToSkills={() => scrollToSection(skillsRef)} 
-        scrollToContact={() => scrollToSection(contactRef)} 
-        scrollToExperience={() => scrollToSection(experienceRef)} 
-      />
+      <NavbarComponent text="SHRAVAN" />
 
       <div>
         <>
           <Header text="CREATIVE UI/UX DESIGNER & WEB DEVELOPER" /> 
           <ProfileSection  text="I’m an India-based web designer and developer focused on creating 
             clean & user-friendly experiences. I love to design beautiful and 
-            functional websites for clients and businesses." 
-            scrollToContact={() => scrollToSection(contactRef)} /> 
+            functional websites for clients and businesses." /> 
         </>
       </div>
-      <div ref={experienceRef}>
-        <>
-          <Header text="EXPERIENCE" />
-          <Experience />
-        </>
-      </div>
-      <div ref={skillsRef}>
-        <>
-          <Header text="SKILLS" />
-          <Skills />
-        </>
-      </div>
-      <div ref={projectsRef}>
+      <div>
         <>
           <Header text="PROJECTS" />
           <ProjectGrid />
         </>
       </div>
-      
-      <div ref={contactRef}>
+      <div>
         <>
-          <Header text="CONTACT ME" />
-          <Contact />
+        <CarouselComponent />
         </>
       </div>
+      <FAQs />
+      <Contact />
       <Footer />
       <ScrollToTop />
     </div>

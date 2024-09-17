@@ -3,7 +3,8 @@ import '../styles/ProfileSection.css';
 import mypic from '../assets/mypic.jpeg';
 
 
-const ProfileSection = ({ text, scrollToContact }) => {
+const ProfileSection = ({ text }) => {
+
   return (
     <section className="profile-section">
       <div className="profile-container">
@@ -15,8 +16,7 @@ const ProfileSection = ({ text, scrollToContact }) => {
           <p>
             {text}
           </p>
-          <button className="contact-button" onClick={scrollToContact}>Contact</button>
-          <button className="contact-button" onClick={scrollToContact}>More</button>
+          <button className="contact-button">Contact</button>       
         </div>
       </div>
     </section>
