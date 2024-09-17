@@ -63,7 +63,6 @@
     background-color: #dccdcd;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .project-item {
       flex-direction: column;
