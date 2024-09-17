@@ -1,5 +1,4 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import React, { useRef } from 'react';
 import NavbarComponent from './components/NavbarComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,25 +18,14 @@ function App() {
     <div className='App'>
       <NavbarComponent text="SHRAVAN" />
 
-      <div>
-        <>
-          <Header text="CREATIVE UI/UX DESIGNER & WEB DEVELOPER" /> 
-          <ProfileSection  text="I’m an India-based web designer and developer focused on creating 
-            clean & user-friendly experiences. I love to design beautiful and 
-            functional websites for clients and businesses." /> 
-        </>
-      </div>
-      <div>
-        <>
-          <Header text="PROJECTS" />
-          <ProjectGrid />
-        </>
-      </div>
-      <div>
-        <>
-        <CarouselComponent />
-        </>
-      </div>
+      <Header text="CREATIVE UI/UX DESIGNER & WEB DEVELOPER" /> 
+      <ProfileSection  text="I’m an India-based web designer and developer focused on creating 
+        clean & user-friendly experiences. I love to design beautiful and 
+        functional websites for clients and businesses." /> 
+
+      <Header text="PROJECTS" />
+      <ProjectGrid />
+      <CarouselComponent />      
       <FAQs />
       <Contact />
       <Footer />

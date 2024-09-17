@@ -30,7 +30,61 @@
 }
 .project-card-second {
   margin-top: 200px;
+  margin-right: 14%;
+}
+.project-card-first {
+  margin-left: 14%;
 }
 .mb-10 {
-  margin-bottom: 10rem; /* Adjust this value as needed */
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-body {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .project-card-first, .project-card-second {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .project-card-first .card, .project-card-second .card {
+    width: 90%;
+  }
+
+  .mb-10 {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-header {
+    font-size: 50px;
+    padding-left: 5%;
+    max-width: 100%;
+  }
+
+  .project-body {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2rem;
+  }
+
+  .project-card-first, .project-card-second {
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .project-card-first .card, .project-card-second .card {
+    width: 80%;
+  }
+
+  .mb-10 {
+    margin-bottom: 3rem;
+  }
 }

@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
     .heading {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .btn-contact {
@@ -39,7 +39,7 @@
 
 @media (max-width: 480px) {
     .heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .btn-contact {
