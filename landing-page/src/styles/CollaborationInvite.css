@@ -1,11 +1,11 @@
-.contact-section {
+.collaboration-section {
     text-align: center;
     background-color: black;
     color: white;
     padding: 50px 0;
 }
 
-.btn-contact {
+.btn-collaboration {
     background-color: white;
     color: black;
     padding: 10px 20px;
@@ -16,7 +16,7 @@
     transition: background-color 0.3s ease;
 }
 
-.btn-contact:hover {
+.btn-collaboration:hover {
     background-color: rgb(135, 135, 135);
 }
 
@@ -31,7 +31,7 @@
         font-size: 2rem;
     }
 
-    .btn-contact {
+    .btn-collaboration {
         padding: 8px 16px;
         font-size: 1em;
     }
@@ -42,7 +42,7 @@
         font-size: 1.5rem;
     }
 
-    .btn-contact {
+    .btn-collaboration {
         padding: 6px 12px;
         font-size: 0.9em;
     }

@@ -2,8 +2,9 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../styles/ProfileSection.css';
 import mypic from '../assets/mypic.jpeg';
+import { Link } from 'react-router-dom';
 
-const ProfileSection = ({ text }) => {
+const ProfileSection = ({ text, btnlink }) => {
   return (
     <section className="profile-section">
       <div className="container">
@@ -14,7 +15,9 @@ const ProfileSection = ({ text }) => {
           <Col md={6} className="text-block">
             <h1>HELLO !</h1>
             <p>{text}</p>
-            <button className="contact-button">Contact</button>       
+            <Link to={btnlink}>
+              <button className="contact-button">Contact</button>
+            </Link>    
           </Col>
         </Row>
       </div>
