@@ -1,0 +1,73 @@
+.container-third {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full height to center vertically */
+    gap: 150px; /* Adjust gap between chat and options */
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+
+.chat {
+    background-color: white;
+    border-radius: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    width: 400px; /* Increased width for a larger image */
+}
+
+.chat-body {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center;
+}
+
+.message-image {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto; /* Set height to auto for better scaling */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px; /* Adjust width for better alignment */
+}
+
+.option {
+    background-color: #a8a8a8;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.option i {
+    font-size: 24px;
+}
+
+.option.active {
+    background-color: #000;
+    color: white;
+}
+
+.option.active i {
+    color: white;
+}
+
+.option.active .option-text {
+    color: white;
+}
+
+.option-text {
+    flex-grow: 1;
+}
+
+.option-description {
+    font-size: 12px;
+    color: gray;
+}
